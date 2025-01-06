@@ -1,0 +1,17 @@
+app = 'rcon-demo'
+primary_region = 'syd'
+
+[build]
+
+[[services]]
+  internal_port = 25575
+  protocol = "tcp"
+  auto_stop_machines = 'stop'
+  auto_start_machines = true
+  [[services.ports]]
+    port = 25575
+
+[[vm]]
+  memory = '512mb'
+  cpu_kind = 'shared'
+  cpus = 1

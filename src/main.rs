@@ -11,7 +11,7 @@ mod rcon_minecraft;
 
 #[tokio::main]
 async fn main() -> Result<(), anyhow::Error> {
-    let mc = TcpListener::bind("localhost:25575").await?;
+    let mc = TcpListener::bind("0.0.0.0:25575").await?;
 
     loop {
         let (mut socket, _) = mc.accept().await?;
