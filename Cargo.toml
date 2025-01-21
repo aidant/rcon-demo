@@ -1,5 +1,5 @@
 [package]
-name = "rcon-demo"
+name = "acorn"
 version = "0.1.0"
 edition = "2021"
 
@@ -9,4 +9,6 @@ reqwest = { version = "0.12.12", features = ["charset", "http2", "json", "rustls
 serde = { version = "1.0.217", features = ["derive"] }
 serde_json = "1.0.134"
 tokio = { version = "1.42.0", features = ["full"] }
+tracing = "0.1.41"
+tracing-subscriber = "0.3.19"
 urlencoding = "2.1.3"
